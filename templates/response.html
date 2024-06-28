@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Response</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Message</h1>
+        <p>{{ user_input }}</p>
+        <h2>Sentiment Analysis</h2>
+        <p>Label: {{ sentiment['label'] }}</p>
+        <p>Score: {{ sentiment['score'] }}</p>
+        <a href="/">Back to Chat</a>
+    </div>
+</body>
+</html>

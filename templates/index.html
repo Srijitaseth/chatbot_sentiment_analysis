@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot with Sentiment Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Chat with our Bot</h1>
+        <form action="/get_response" method="post">
+            <input type="text" name="user_input" placeholder="Enter your message">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
